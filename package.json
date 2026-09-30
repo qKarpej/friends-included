@@ -1,0 +1,14 @@
+{
+  "name": "friends-included",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Friends Included Ltd finance system — Telegram + Supabase + Vercel + Google Sheets",
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "node scripts/dev-server.js",
+    "test": "node --test \"test/*.test.js\""
+  }
+}

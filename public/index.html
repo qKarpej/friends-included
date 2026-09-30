@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Friends Included — Finance</title>
+  <meta name="description" content="Friends Included Ltd finance system: Telegram + Supabase + Vercel + Google Sheets.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='24' cy='34' r='16' fill='none' stroke='%23b08d57' stroke-width='6'/%3E%3Ccircle cx='40' cy='34' r='16' fill='none' stroke='%237a3b4f' stroke-width='6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <div class="brand">
+        <svg class="rings" viewBox="0 0 64 44" aria-hidden="true"><circle cx="22" cy="22" r="15"/><circle cx="42" cy="22" r="15"/></svg>
+        <div>
+          <h1>Friends Included <span>Ltd</span></h1>
+          <p class="tagline">All friendships expire at checkout · Finance system</p>
+        </div>
+      </div>
+      <div class="role-box">
+        <label for="role">Demonstration role</label>
+        <select id="role"></select>
+        <small id="role-hint"></small>
+      </div>
+    </div>
+    <div class="wrap byline">
+      <span>Built by <strong id="student-name">…</strong></span>
+      <nav class="links" id="links"></nav>
+    </div>
+  </header>
+
+  <div id="mode-banner" class="wrap" hidden></div>
+
+  <nav class="tabs wrap" id="tabs" role="tablist"></nav>
+
+  <main class="wrap" id="view" aria-live="polite"></main>
+
+  <div id="toast" role="status" hidden></div>
+
+  <footer class="wrap footer">
+    <p>Supabase is the source of truth · Google Sheets is a read-only mirror · Telegram and the website share one processing layer · All people and transactions are fictional.</p>
+  </footer>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
